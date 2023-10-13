@@ -19,7 +19,7 @@ while true; do
   $1 &
   PID=$!
   echo "watching $2"
-  inotifywait -e modify -e move -e create -e delete -r "$2"
+  inotifywait -e modify -e move -e create -e delete -r "$2" @"$2/.Rproj.user/"
   kill $PID
 done
 
