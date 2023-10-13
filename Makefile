@@ -22,4 +22,4 @@ installdeps:
 	ssh $(SERVER) 'cd $(APPDIR) && R -e "renv::restore()"'
 
 deploymentfiles:
-	sed -- 's/http:\/\/localhost:8000\//https:\/\/rshiny.f4.htw-berlin.de\/api\//g' app.R > app_prod.R
+	sed -- 's/http:\/\/localhost:8000/https:\/\/rshiny.f4.htw-berlin.de\/api/g' app.R > app_prod.R
