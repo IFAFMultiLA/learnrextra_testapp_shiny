@@ -1,10 +1,10 @@
 SERVER := htwserver-mk
-APPDIR := ~/ShinyApps/adaptivelearnr_testapp_shiny
+APPDIR := ~/ShinyApps/learnrextra_testapp_shiny
 SERVER_APP := $(SERVER):$(APPDIR)
 RSYNC_COMMON := -rcv --exclude-from=.rsyncexclude
 
 devserver:
-	R -e 'renv::install("../adaptivelearnr");shiny::runApp(port = 8002, launch.browser = FALSE)'
+	R -e 'renv::install("../learnrextra");shiny::runApp(port = 8002, launch.browser = FALSE)'
 
 sync: deploymentfiles
 	rsync $(RSYNC_COMMON) . $(SERVER_APP)

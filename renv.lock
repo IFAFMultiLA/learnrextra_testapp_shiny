@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.3.1",
+    "Version": "4.3.2",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -29,21 +29,6 @@
         "utils"
       ],
       "Hash": "ae6cbbe1492f4de79c45fce06f967ce8"
-    },
-    "adaptivelearnr": {
-      "Package": "adaptivelearnr",
-      "Version": "0.6.1",
-      "Source": "Local",
-      "RemoteType": "local",
-      "RemoteUrl": "../adaptivelearnr",
-      "Requirements": [
-        "fs",
-        "htmltools",
-        "jsonlite",
-        "learnr",
-        "shiny"
-      ],
-      "Hash": "eb0f83e97d7b04710e7803bd9731d56e"
     },
     "backports": {
       "Package": "backports",
@@ -347,6 +332,21 @@
       ],
       "Hash": "3267d22ec2560045f5ff6e24d536c8d7"
     },
+    "learnrextra": {
+      "Package": "learnrextra",
+      "Version": "0.6.10",
+      "Source": "Local",
+      "RemoteType": "local",
+      "RemoteUrl": "../learnrextra",
+      "Requirements": [
+        "fs",
+        "htmltools",
+        "jsonlite",
+        "learnr",
+        "shiny"
+      ],
+      "Hash": "f09e69cd08e832df8f6388e474107f3b"
+    },
     "lifecycle": {
       "Package": "lifecycle",
       "Version": "1.0.3",
@@ -432,13 +432,13 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "0.17.3",
+      "Version": "1.0.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "utils"
       ],
-      "Hash": "4543b8cd233ae25c6aba8548be9e747e"
+      "Hash": "41b847654f567341725473431dd0d5ab"
     },
     "rlang": {
       "Package": "rlang",

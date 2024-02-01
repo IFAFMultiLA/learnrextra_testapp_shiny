@@ -8,13 +8,13 @@
 #
 
 library(shiny)
-library(adaptivelearnr)
+library(learnrextra)
 
-options("adaptivelearnr.apiserver" = "http://localhost:8000")
+options("learnrextra.apiserver" = "http://localhost:8000")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-    use_adaptivelearnr(),
+    use_learnrextra(),
 
     fluidRow(
         column(
