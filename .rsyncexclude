@@ -9,4 +9,3 @@ renv/staging/
 Makefile
 *.swp
 README.md
-depwatcher.sh
