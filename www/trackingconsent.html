@@ -1,0 +1,29 @@
+<div class="modal fade" id="consentmodal" tabindex="-2" data-keyboard="false" data-backdrop="static" data-show="false" role="dialog" aria-labelledby="consentmodal_label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="consentmodal_label"><%- consentmodal_title %></h5>
+      </div>
+      <div class="modal-body">
+          <div class="text-full">
+              <p>The tracking consent notes can be stored in the HTML file under <code>www/trackingconsent.html</code>.</p>
+          </div>
+          <div class="text-restricted">
+              <%= consentmodal_cookiesonly_text %>
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="text-full">
+              <button id="consent-btn" type="button" class="btn btn-primary"><%- consentmodal_accept_btn %></button>
+              <button id="no-consent-btn" type="button" class="btn btn-default"><%- consentmodal_decline_btn %></button>
+          </div>
+          <div class="text-restricted">
+              <button id="restricted-consent-btn" type="button" class="btn btn-primary"><%- consentmodal_cookiesonly_accept_btn %></button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

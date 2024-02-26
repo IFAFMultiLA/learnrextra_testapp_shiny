@@ -334,14 +334,10 @@
     },
     "learnrextra": {
       "Package": "learnrextra",
-      "Version": "0.6.10",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "IFAFMultiLA",
-      "RemoteRepo": "learnrextra",
-      "RemoteRef": "main",
-      "RemoteSha": "c794490c5755b13ce6ab565ea0b46b9a4ed4c5aa",
+      "Version": "0.7.0",
+      "Source": "Local",
+      "RemoteType": "local",
+      "RemoteUrl": "../../learnrextra",
       "Requirements": [
         "fs",
         "htmltools",
@@ -349,7 +345,7 @@
         "learnr",
         "shiny"
       ],
-      "Hash": "5c3aaa1976506d5b3fa783b4f314a8ef"
+      "Hash": "8c9f3d64c1152d72c8566fa8b380359f"
     },
     "lifecycle": {
       "Package": "lifecycle",

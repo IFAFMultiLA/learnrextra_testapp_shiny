@@ -1,10 +1,5 @@
 #
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
+# This is an example Shiny web application that uses the learnrextra package to track user interactions.
 #
 
 library(shiny)
@@ -14,12 +9,13 @@ options("learnrextra.apiserver" = "http://localhost:8000")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-    use_learnrextra(),
+    # set up learnrextra; optionally point to HTML files with tracking consent and data protection notes
+    use_learnrextra(consentmodal = "www/trackingconsent.html", dataprotectmodal = "www/dataprotect.html"),
 
     fluidRow(
         column(
             width = 12,
-            info_display()
+            info_display()   # show link for data protection and optional login information
         )
     ),
 
