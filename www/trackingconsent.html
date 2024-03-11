@@ -2,11 +2,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="consentmodal_label"><%- consentmodal_title %></h5>
+        <h5 class="modal-title" id="consentmodal_label">
+            <span class="text-full"><%- consentmodal_full_title %></span>
+            <span class="text-restricted"><%- consentmodal_cookiesonly_title %></span>
+        </h5>
       </div>
       <div class="modal-body">
           <div class="text-full">
-              <p>The tracking consent notes can be stored in the HTML file under <code>www/trackingconsent.html</code>.</p>
+              <%= consentmodal_full_text %>
           </div>
           <div class="text-restricted">
               <%= consentmodal_cookiesonly_text %>
@@ -24,6 +27,3 @@
     </div>
   </div>
 </div>
-
-
-
